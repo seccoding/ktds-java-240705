@@ -99,6 +99,12 @@ public class PetInfo {
 		}
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		PetInfo other = (PetInfo) obj;
+		return this.type.equals(other.getType()) && this.name.equals(other.getName());
+	}
+	
 }
 
 
